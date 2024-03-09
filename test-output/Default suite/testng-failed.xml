@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="com.qa.opencart.testcases.AccountsPageTest">
+        <methods>
+          <include name="accSetup"/>
+          <include name="accPageTitleTest"/>
+          <include name="productinfotest"/>
+          <include name="accPageSectionsTest"/>
+          <include name="accPageUrlTest"/>
+          <include name="setup"/>
+          <include name="selectproductTest"/>
+          <include name="addtoCartTest"/>
+          <include name="tearDown"/>
+          <include name="searchTest"/>
+          <include name="productImageTest"/>
+        </methods>
+      </class> <!-- com.qa.opencart.testcases.AccountsPageTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

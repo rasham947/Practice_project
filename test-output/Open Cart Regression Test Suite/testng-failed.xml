@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" guice-stage="DEVELOPMENT" verbose="4" name="Failed suite [Open Cart Regression Test Suite]" parallel="tests">
+  <test thread-count="3" verbose="4" name="Open Cart Register Page Test_chrome_100(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="browserversion" value="100.0"/>
+    <classes>
+      <class name="com.qa.opencart.testcases.RegisterTest">
+        <methods>
+          <include name="registerUserTest"/>
+          <include name="setup"/>
+          <include name="registerSetup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.qa.opencart.testcases.RegisterTest -->
+    </classes>
+  </test> <!-- Open Cart Register Page Test_chrome_100(failed) -->
+  <test thread-count="3" verbose="4" name="Open Cart Accounts Page Test(failed)" parallel="tests">
+    <classes>
+      <class name="com.qa.opencart.testcases.AccountsPageTest">
+        <methods>
+          <include name="accSetup"/>
+          <include name="accPageTitleTest"/>
+          <include name="productinfotest"/>
+          <include name="accPageSectionsTest"/>
+          <include name="accPageUrlTest"/>
+          <include name="setup"/>
+          <include name="selectproductTest"/>
+          <include name="addtoCartTest"/>
+          <include name="tearDown"/>
+          <include name="searchTest"/>
+          <include name="productImageTest"/>
+        </methods>
+      </class> <!-- com.qa.opencart.testcases.AccountsPageTest -->
+    </classes>
+  </test> <!-- Open Cart Accounts Page Test(failed) -->
+  <test thread-count="3" verbose="4" name="Open Cart Login Page Test(failed)" parallel="tests">
+    <classes>
+      <class name="com.qa.opencart.testcases.LoginPageTest">
+        <methods>
+          <include name="loginTest"/>
+          <include name="setup"/>
+          <include name="loginPageTitleTest"/>
+          <include name="tearDown"/>
+          <include name="forgotPwdLinkExistTest"/>
+          <include name="loginPageURLTest"/>
+        </methods>
+      </class> <!-- com.qa.opencart.testcases.LoginPageTest -->
+    </classes>
+  </test> <!-- Open Cart Login Page Test(failed) -->
+</suite> <!-- Failed suite [Open Cart Regression Test Suite] -->
